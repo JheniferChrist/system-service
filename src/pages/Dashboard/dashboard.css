@@ -1,0 +1,165 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 12.8px;
+}
+
+.conteiner span{
+    margin: 32px 0;
+    font-weight: 600;
+    font-size: 19.2px;
+}
+
+.new{
+    float: right;
+    margin-bottom: 24px;
+    background-color: #83bf02;
+    color: #FFF;
+    border: 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 17.6px;
+    border-radius: 6px;
+    transition: ease-in 0.2s;
+}
+
+.new svg{
+    margin-right: 5px;
+}
+
+.new:hover{
+    background-color: #5fd204;
+    transform: scale(1.1);
+}
+
+
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+}
+
+table caption{
+    font-size: 24px;
+    margin: 8px 0 12px;
+}
+
+table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 5.6px;
+}
+
+table th,
+table td{
+    padding: 9.9px;
+    text-align: center;
+}
+
+table th{
+    font-size: 13.6px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+
+table td .action{
+    border: 0;
+    padding: 5px;
+    margin-right: 2px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+
+table td .action svg{
+    vertical-align: middle;
+}
+
+table td .badge{
+    padding: 3px;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.botao-mais{
+    margin: 24px;
+    padding: 8px 16px;
+    height: 35px;
+    border:0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #FFF;
+    font-size: 17.6px;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    table{
+        border:0;
+    }
+
+    table caption{
+        font-size: 20.8px;
+    }
+
+    table thead{
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr{
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    table td{
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 12.8px;
+        text-align: right;
+    }
+
+    table td::before{
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child{
+        border-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

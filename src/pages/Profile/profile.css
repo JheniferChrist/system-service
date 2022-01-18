@@ -1,0 +1,75 @@
+.conteiner-profile{
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 12.8px;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+
+.label-avatar{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.label-avatar input{
+  display: none;  
+}
+
+.label-avatar span{
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .2s;
+}
+
+.label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.form-profile img{
+    margin-bottom: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form-profile label{
+    margin-bottom: 8px;
+    font-size: 22.4px;
+
+}
+
+
+.form-profile input, textarea, select{
+    margin-bottom: 16px;
+    padding: 11.2px;
+    border:0;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.form-profile :disabled{
+    cursor: not-allowed;
+}
+
+.form-profile button{
+    max-width: 600px;
+}
+
+.botao-sair{
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
